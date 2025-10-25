@@ -14581,20 +14581,22 @@ table.woocommerce-product-attributes {
   }
 }
 
-.special-btn{
+.special-btn {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 @media (max-width: 767px) {
-  .special-btn{
-  flex-direction: column;
+  .special-btn {
+    flex-direction: column;
+  }
+  .home-offer {
+    display: none;
+  }
 }
-.home-offer{
-display: none;}
+.home-offer {
+  border-radius: 10px;
 }
-.home-offer{
-border-radius: 10px;}
 
 .map-container {
   position: relative;
@@ -14623,7 +14625,6 @@ border-radius: 10px;}
     font-size: 15px;
   }
 }
-.i4ewOd-pzNkMb-haAclf
- {
+.i4ewOd-pzNkMb-haAclf {
   display: none;
 }
