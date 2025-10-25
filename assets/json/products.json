@@ -61,7 +61,7 @@
     "name": "10107 calacatta nisus",
     "description": "Soft white marble with subtle brown veining, perfect for minimalist and modern interior designs.",
     "price": 27,
-    "images": ["images/shop-prod/nisus1.webp", "images/shop-prod/nisus.webp"],
+    "images": ["images/shop-prod/nisus1.webp", "images/shop-prod/nisus2.webp"],
     "latest": "yes"
   },
   {
@@ -122,8 +122,9 @@
     "description": "A sleek and modern marble with soft gray tones, perfect for contemporary kitchen and bath designs.",
     "price": 29,
     "images": [
+      
       "images/shop-prod/borghini1.webp",
-      "images/shop-prod/borghini1.webp"
+      "images/shop-prod/borghini2.webp"
     ],
     "latest": "yes"
   },
@@ -145,7 +146,7 @@
     "price": 27,
     "images": [
       "images/shop-prod/c-claire-g1.webp",
-      "images/shop-prod/c-clarie-g2.webp"
+      "images/shop-prod/c-claire-g2.webp"
     ],
     "latest": "yes"
   },

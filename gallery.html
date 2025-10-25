@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Gramentheme" />
+    <meta name="description" content="Fortezza Quartz - Gallery" />
+    <title>Fortezza Quartz - Gallery</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <style>
+      /* Custom styles for the image preview modal */
+      .image-preview-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow: auto;
+      }
+      
+      .image-preview-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        margin-top: 5vh;
+      }
+      
+      .image-preview-close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .image-preview-caption {
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+        font-size: 18px;
+      }
+      
+      .project-card {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Mouse Cursor Start -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/logo/fortezza-logo-white.webp"
+                    alt="logo-img"
+                    height="75"
+                  />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <p class="text d-none d-xl-block">
+              Transforming spaces with premium, innovative quartz solutions that
+              combine natural beauty with superior durability. Experience the
+              spirit of modern design with our customer-focused approach and
+              sustainable practices.
+            </p>
+            <div class="mobile-menu fix mb-3"></div>
+            <div class="offcanvas__contact">
+              <h4>Contact Info</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#"
+                      >1580 Trinity Dr Unit 4, Mississauga, ON L5T 1L6, Canada</a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-envelope"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="mailto:info@fortezzaquartz.com"
+                      ><span class="mailto:info@fortezzaquartz.com"
+                        >info@fortezzaquartz.com</span
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-clock"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#">Monday - Sunday</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="far fa-phone"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+16478602420"> +1 (647)-860-2420</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header-button mt-4">
+                <a href="contact.html" class="theme-btn text-center">
+                  <span
+                    >Get A Quote<i class="fa-solid fa-arrow-right-long"></i
+                  ></span>
+                </a>
+              </div>
+              <div class="social-icon d-flex align-items-center">
+                <a href="https://www.facebook.com/profile.php?id=61581564274938"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.tiktok.com/@fortezza.quartz"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+                <a href="https://www.instagram.com/fortezzaquartz/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    
+    <!-- Header Section Start -->
+    <header class="header-section-2">
+      <div id="header-sticky" class="header-2">
+        <div class="container">
+          <div class="mega-menu-wrapper">
+            <div class="header-main">
+              <div class="header-left">
+                <div class="logo">
+                  <a href="index.html" class="header-logo">
+                    <img
+                      src="assets/images/logo/fortezza-logo-black.webp"
+                      alt="logo-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="header-middle">
+                <div class="mean__menu-wrapper">
+                  <div class="main-menu">
+                    <nav id="mobile-menu">
+                      <ul>
+                        <li>
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="about.html">About</a>
+                        </li>
+                        <li>
+                          <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                          <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                          <a href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="header-right d-flex justify-content-end align-items-center"
+              >
+                <div class="header__hamburger d-xl-block my-auto">
+                  <div class="sidebar__toggle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="21"
+                      viewBox="0 0 30 21"
+                      fill="none"
+                    >
+                      <line y1="0.5" x2="20" y2="0.5" stroke="#2B1E16" />
+                      <line y1="10.5" x2="30" y2="10.5" stroke="#2B1E16" />
+                      <line y1="20.5" x2="20" y2="20.5" stroke="#2B1E16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcumb Section  S T A R T -->
+    <div class="breadcumb-section">
+      <div class="breadcumb-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Gallery</h1>
+                <ul class="breadcumb-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="text-white">
+                    <i class="fa-solid fa-chevrons-right"></i>
+                  </li>
+                  <li class="active">Gallery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Gallery Section S T A R T -->
+<div class="project-section section-padding fix">
+    <div class="container">
+        <div class="row gy-30 gx-30 project-grid">
+            <!-- Products will be dynamically loaded here by JavaScript -->
+        </div>
+    </div>
+</div>
+
+<!-- Image Preview Modal -->
+<div id="imagePreviewModal" class="image-preview-modal">
+    <span class="image-preview-close" onclick="closeImagePreview()">&times;</span>
+    <img class="image-preview-content" id="previewImage">
+    <div id="previewCaption" class="image-preview-caption"></div>
+</div>
+
+    <!-- Footer Section    S T A R T -->
+    <footer class="footer-section position-relative bg-color1">
+      <div class="footer-widgets-wrapper fix">
+        <div class="brand-slider-section">
+          <div class="brand-slider-container-wrapper style1">
+            <div class="container">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index.html">
+                    <img
+                      src="assets/images/logo/fortezza-logo-white.webp"
+                      alt="logo-img"
+                      height="75"
+                    />
+                  </a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    Transforming spaces with premium, innovative quartz
+                    solutions that combine natural beauty with superior
+                    durability.
+                  </p>
+                  <div class="social-icon d-flex align-items-center">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61581564274938"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.tiktok.com/@fortezza.quartz"
+                      ><i class="fa-brands fa-tiktok"></i
+                    ></a>
+                    <a href="https://www.instagram.com/fortezzaquartz/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>
+                    <img
+                      class="me-1"
+                      src="assets/images/shape/footertitleShape1_1.webp"
+                      alt="shape"
+                    />
+                    Explore
+                  </h3>
+                </div>
+                <ul class="list-area">
+                  <li>
+                    <a href="index.html">
+                      <i class="fa-solid fa-chevrons-right"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <i class="fa-solid fa-chevrons-right"></i>
+                      About Us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="shop.html">
+                      <i class="fa-solid fa-chevrons-right"></i>
+                   Shop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gallery.html">
+                      <i class="fa-solid fa-chevrons-right"></i>
+                      Projects
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i class="fa-solid fa-chevrons-right"></i>
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+            
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>
+                    <img
+                      class="me-1"
+                      src="assets/images/shape/footertitleShape1_1.webp"
+                      alt="shape"
+                    />
+                    Get In Touch
+                  </h3>
+                </div>
+                <ul class="list-area">
+                  <li>
+                    <div class="title">
+                      <a
+                        href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu"
+                      >
+                        <span class="text-theme-color me-1">
+                          <i class="fa-regular fa-location-dot"></i>
+                        </span>
+                        1580 Trinity Dr Unit 4, Mississauga, ON L5T 1L6, Canada</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <a href="tel:+16478602420">
+                        <span class="text-theme-color me-1">
+                          <i class="fa-regular fa-phone"></i>
+                        </span>
+                        +1(647)-860-2420
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <a href="mailto:info@fortezzaquartz.com">
+                        <span class="text-theme-color me-1">
+                          <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        info@fortezzaquartz.com
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom bg-color2">
+        <div class="container">
+          <div
+            class="footer-wrapper d-flex align-items-center justify-content-between"
+          >
+            <p class="wow fadeInLeft" data-wow-delay=".3s">
+              © All Copyright 2025 by Fortezza Quartz Surfaces
+            </p>
+            <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
+              <li>
+                <a class="text-white" href="contact.html">
+                  Terms & Condition
+                </a>
+              </li>
+              <li>
+                <a class="text-white" href="contact.html"> Privacy Policy </a>
+              </li>
+              <li>
+                <a class="text-white" href="contact.html"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <a
+      href="https://wa.me/16478602420"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-whatsapp"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+        />
+      </svg>
+    </a>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/tilt.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery-product.js"></script>
+
+    
+    <script>
+      // Image preview functionality
+      function openImagePreview(src, caption) {
+        document.getElementById("previewImage").src = src;
+        document.getElementById("previewCaption").innerHTML = caption;
+        document.getElementById("imagePreviewModal").style.display = "block";
+      }
+      
+      function closeImagePreview() {
+        document.getElementById("imagePreviewModal").style.display = "none";
+      }
+      
+      // Close modal when clicking outside the image
+      document.getElementById("imagePreviewModal").addEventListener("click", function(event) {
+        if (event.target === this) {
+          closeImagePreview();
+        }
+      });
+      
+      // Close modal with Escape key
+      document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+          closeImagePreview();
+        }
+      });
+    </script>
+  </body>
+</html>
