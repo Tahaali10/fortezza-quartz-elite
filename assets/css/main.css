@@ -63,12 +63,12 @@ Description: Florem - Flooring & Tiling Figma Template <
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #c7844f;
+  --theme: #fff;
   --theme2: #f9f3ef;
   --theme3: #8a5133;
-  --title: #2b1e16;
-  --orange: #e78c45;
-  --text: #687179;
+  /* --title: #2b1e16; */
+  --orange: #fff;
+  --text: #fff;
   --text2: #cbcbcb;
   --border: rgba(40, 30, 22, 0.36);
   --border-2: #d9d9d9;
@@ -89,7 +89,7 @@ body {
   font-weight: normal;
   line-height: 28px;
   color: var(--text);
-  background-color: var(--white);
+  background-color: #000;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -440,14 +440,15 @@ input[type="radio"]:checked ~ label::before {
   position: relative;
   padding: 15px 25px;
   gap: 10px;
-  color: var(--white);
+  color: #fff;
   font-family: "Plus Jakarta Sans", system-ui;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  background: var(--theme);
+  background: transparent;
+  border: 1px solid #fff !important;
   z-index: 1;
   line-height: 1;
   overflow: hidden;
@@ -502,7 +503,8 @@ input[type="radio"]:checked ~ label::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--theme);
+  border: 1px solid #fff;
+  background: transparent;
   color: var(--white);
 }
 .theme-btn.style3:before {
@@ -512,7 +514,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .theme-btn.style3 svg path,
 .theme-btn.style3 svg rect {
-  fill: var(--black);
+  fill: #fff;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -520,11 +522,11 @@ input[type="radio"]:checked ~ label::before {
   -o-transition: all 0.4s;
 }
 .theme-btn.style3:hover {
-  color: var(--title) !important;
+  color: #000 !important;
 }
 .theme-btn.style3:hover svg path,
 .theme-btn.style3:hover svg rect {
-  fill: var(--title);
+  fill: #000;
 }
 .theme-btn.style4 {
   display: flex;
@@ -556,7 +558,8 @@ input[type="radio"]:checked ~ label::before {
   fill: var(--white);
 }
 .theme-btn:hover {
-  color: var(--white) !important;
+  color: #000 !important;
+  background-color: #fff;
 }
 .theme-btn:hover:before {
   top: -96%;
@@ -2049,7 +2052,7 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .bg-theme2 {
-  background: var(--theme2) !important;
+  background: #000 !important;
 }
 
 .bg-orange {
@@ -2475,11 +2478,12 @@ input[type="radio"]:checked ~ label::before {
 
 .back-to-top {
   border-radius: 12px;
-  background-color: var(--theme);
+  background-color: #000;
+  border: 2px solid #fff;
   width: 50px;
   height: 50px;
   line-height: 50px;
-  color: var(--white);
+  color: #fff;
   font-size: 18px;
   position: fixed;
   display: inline-block;
@@ -2492,7 +2496,8 @@ input[type="radio"]:checked ~ label::before {
   transform: translateY(20px);
 }
 .back-to-top:hover {
-  background-color: var(--title);
+  background-color: #fff;
+  color: #000;
 }
 .back-to-top.show {
   opacity: 1;
@@ -7793,7 +7798,7 @@ input.main-search-input::placeholder {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background: var(--white);
+  background: #000 !important;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -7820,7 +7825,7 @@ input.main-search-input::placeholder {
   left: 0;
   width: 5px;
   height: 40px;
-  background: var(--theme);
+  background: #fff;
   transform: translateY(-50%);
   transition: all 0.4s;
   -webkit-transform: translateY(-50%);
@@ -10478,7 +10483,7 @@ input.main-search-input::placeholder {
 .contact-info-box.style1 {
   text-align: center;
   padding: 40px 50px;
-  background: var(--theme2);
+  background: #000;
 }
 .contact-info-box.style1 .icon {
   display: block;
@@ -10486,7 +10491,7 @@ input.main-search-input::placeholder {
   height: 70px;
   line-height: 70px;
   text-align: center;
-  background: var(--theme);
+  background: #000;
   margin: auto;
   margin-bottom: 15px;
 }
@@ -10514,7 +10519,7 @@ input.main-search-input::placeholder {
 .contact-info-box.style2 {
   text-align: center;
   padding: 40px 50px;
-  background: var(--theme);
+  background: #000;
 }
 .contact-info-box.style2 .icon {
   display: block;
@@ -10522,7 +10527,7 @@ input.main-search-input::placeholder {
   height: 70px;
   line-height: 70px;
   text-align: center;
-  background: var(--theme3);
+  background: #000;
   margin: auto;
   margin-bottom: 15px;
 }
@@ -10565,9 +10570,10 @@ input.main-search-input::placeholder {
 
 .contact-form.style2 {
   padding: 46px 42px 46px 38px;
-  background: var(--white);
-  border: 1px solid var(--border-4);
+  background: transparent;
+  border: 1px solid #a29b9b;
   margin-top: -780px;
+  backdrop-filter: blur(10px);
 }
 @media (max-width: 767px) {
   .contact-form.style2 {
@@ -10576,7 +10582,7 @@ input.main-search-input::placeholder {
   }
 }
 .contact-form.style2 h2 {
-  color: var(--title);
+  color: #000;
   font-family: "Plus Jakarta Sans", system-ui;
   font-size: 30px;
   font-style: normal;
@@ -10591,8 +10597,8 @@ input.main-search-input::placeholder {
   margin-bottom: 25px;
   border-radius: 8px;
   border: 1px solid #d4dcff;
-  background: var(--theme2);
-  color: var(--text);
+  background: #000;
+  color: #fff;
   font-family: "Plus Jakarta Sans", system-ui;
   font-size: 16px;
   font-style: normal;
@@ -10600,10 +10606,19 @@ input.main-search-input::placeholder {
   line-height: 26px;
 }
 .contact-form.style2 textarea.form-control {
-  background-color: var(--theme2);
+  background-color: #000;
   border-radius: 8px;
+  color: #fff;
   border: 1px #d4dcff !important;
   margin-bottom: 25px;
+}
+input::placeholder {
+  color: #fff; /* light gray */
+  opacity: 1; /* ensures full visibility in some browsers */
+}
+.contact-form.style2 textarea::placeholder {
+  color: #fff; /* change this to any color you like */
+  opacity: 1;  /* make sure it's fully visible */
 }
 .contact-form.style2 .single-select {
   width: 100%;
@@ -12996,7 +13011,7 @@ input.main-search-input::placeholder {
   height: 80px;
   line-height: 80px;
   text-align: center;
-  background: var(--theme);
+  background: transparent;
   border-radius: 50%;
 }
 .values-wrapper.style1 .values-box.style1 .content {
@@ -13017,6 +13032,14 @@ input.main-search-input::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+.qou-btn{
+border: 1px solid white;
+    padding: 7px;
+}
+.qou-btn:hover{
+color: #000 !important;
+background-color: white;
 }
 @media (max-width: 767px) {
   .values-wrapper.style1 .values-box.style1 .content {
@@ -14442,7 +14465,7 @@ table.woocommerce-product-attributes {
 .filter-dropdown label,
 .sort-dropdown label {
   font-weight: 500;
-  color: #333;
+  color: #fff;
   font-size: 0.95rem;
 }
 
@@ -14457,8 +14480,8 @@ table.woocommerce-product-attributes {
   background-color: #fff;
   appearance: none;
   transition: border 0.3s ease;
-  background-image: linear-gradient(45deg, transparent 50%, #007bff 50%),
-    linear-gradient(135deg, #007bff 50%, transparent 50%);
+  background-image: linear-gradient(45deg, transparent 50%, #000 50%),
+    linear-gradient(135deg, #000 50%, transparent 50%);
   background-position: calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
